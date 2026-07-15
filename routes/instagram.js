@@ -4,7 +4,7 @@ const { verifyWebhook, verifyWebhookSignature, handleWebhook } = require('../con
 
 const router = express.Router();
 
-const protect = require('../middleware/auth');
+const { protect } = require('../middleware/auth');
 const { instagramProfileLimiter } = require('../middleware/rateLimiters');
 
 /**
